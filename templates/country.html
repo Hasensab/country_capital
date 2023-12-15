@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coutry Page</title>
+    <style>
+        table{
+            border-collapse: collapse;
+            height: 100px;
+            width: 290px;
+            text-align: center;
+        }
+        body{
+            background-color: aquamarine;
+        }
+    </style>
+</head>
+<body>
+    <center>
+        <table border="2px solid black">
+            <caption>COUNTRY TABLE</caption>
+            <tr>
+                <th>cid</th>
+                <th>country_name</th>
+                
+            </tr>
+            {% for co in country %}
+                <tr>
+                    <td>{{ co.cid }}</td>
+                    <td>{{ co.country_name }}</td>
+                    
+                </tr>
+            {% endfor %}
+        </table>
+    </center>
+</body>
+</html>
